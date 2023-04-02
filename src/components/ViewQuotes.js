@@ -20,7 +20,7 @@ const ViewQuotes = ({service}) => {
           <div className="px-6">
             <div className="flex flex-wrap justify-center">
             <div class="rounded-t-lg h-32 overflow-hidden">
-              <img class="object-cover w-20 object-top w-full" src="https://le-cdn.hibuwebsites.com/aeb1d9b09e1b4b938adfa73d1d08351c/dms3rep/multi/opt/Office-86fb027e-396w.jpg" alt='Mountain'/>
+              <img class="object-cover w-20  w-full" src="https://le-cdn.hibuwebsites.com/aeb1d9b09e1b4b938adfa73d1d08351c/dms3rep/multi/opt/Office-86fb027e-396w.jpg" alt='Mountain'/>
           </div>
               <div className="w-full px-4 flex justify-center">
               <div className="relative  w-24 h-24 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
