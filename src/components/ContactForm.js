@@ -1,5 +1,4 @@
 import React, { useState,useEffect } from 'react';
-import Footer from './Footer';
 import { useParams } from 'react-router-dom';
 import { useContext } from 'react';
 import { AuthContext } from './AuthContext';
@@ -183,7 +182,6 @@ const ContactForm = ({contService,setQuote}) => {
 </div>
 
 </div>
-<Footer/>
 </>
   );
 };

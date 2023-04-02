@@ -11,6 +11,7 @@ import Login from './components/Login';
 import GettingStarted from './components/GettingStarted';
 import AuthProvider from './components/AuthContext';
 import ViewQuotes from './components/ViewQuotes.js';
+import Footer from './components/Footer';
 
 function App() {
   const [contService, setContService] = useState([]);
@@ -73,6 +74,7 @@ function App() {
               element={<ViewQuotes services={selectedServices} />}
             />
           </Routes>
+          <Footer />
         </AuthProvider>
       </BrowserRouter>
     </div>

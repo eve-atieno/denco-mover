@@ -1,6 +1,6 @@
 import {useContext, useState} from 'react'
 import {AuthContext} from './AuthContext'
-import Footer from "./Footer";
+
 
 function Login (){
     const [email, setEmail] = useState('')
@@ -35,7 +35,7 @@ function Login (){
                 </form>
             </div>
         </div>
-        <Footer/>
+        
         </>
     )
 }

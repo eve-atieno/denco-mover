@@ -1,5 +1,4 @@
 import React from "react";
-import Footer from "./Footer";
 import { AuthContext } from "./AuthContext";
 import { useContext, useState } from "react";
 
@@ -80,7 +79,6 @@ function SignUp() {
         </form>
       </div>
     </div>
-    <Footer/>
     </>
   );
 }

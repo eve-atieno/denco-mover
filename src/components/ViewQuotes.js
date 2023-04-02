@@ -13,7 +13,7 @@ const ViewQuotes = ({service}) => {
  
   let quotesCards = quotes.map((quote) => {
     return (
-      <div>
+      <div className='grid grid-cols-1 gap-2 px-28 py-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3'>
       <section className="pt-16 bg-blueGray-50">
       <div className="w-full lg:w-4/12 px-4 mx-auto">
         <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16">
@@ -36,15 +36,12 @@ const ViewQuotes = ({service}) => {
             <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
               <div className="flex flex-wrap ">
                 <div className="w-full lg:w-9/12 ">
-                 {/*  create for me a code that can show bookings */}
-      
-                  <h3 className="text-3xl text-center font-serif leading-normal mb-2 text-blueGray-700 dark:text-blueGray-200">
+                  <h3 className="text-3xl text-justify font-serif leading-normal mb-2 text-blueGray-700 dark:text-blueGray-200">
                     My Bookings
                   </h3>
-                  <p className="text-lg text-center font-serif leading-relaxed mt-4 mb-4 text-blueGray-600 dark:text-blueGray-400">
-                    Here is a list of all your bookings
+                  <p className="text-lg text-center text-justify font-serif leading-relaxed mt-4 mb-4 text-blueGray-600 dark:text-blueGray-400">
+                    Your booking details are below
                   </p>
-                 {/* create for me a list with row headings, service name, moving from. moving to and date*/}
                   <div className=" ">
                     <div className=" ">
                       <p className="text-lg font-serif leading-relaxed mt-4 mb-4 text-blueGray-600 dark:text-blueGray-400">
