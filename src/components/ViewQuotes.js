@@ -19,12 +19,12 @@ const ViewQuotes = ({service}) => {
         <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16">
           <div className="px-6">
             <div className="flex flex-wrap justify-center">
-            <div class="rounded-t-lg h-32 overflow-hidden">
+            <div class="lex-1 max-w-sm hover:shadow-lg dark:hover:shadow-black/30 rounded overflow-hidden bg-slate-50 mt-5 mx-5 h-96">
               <img class="object-cover w-20  w-full" src="https://le-cdn.hibuwebsites.com/aeb1d9b09e1b4b938adfa73d1d08351c/dms3rep/multi/opt/Office-86fb027e-396w.jpg" alt='Mountain'/>
           </div>
               <div className="w-full px-4 flex justify-center">
               <div className="relative  w-24 h-24 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                <svg className="absolute w-20 h-20 centre text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+                <svg className="absolute w-20 h-20 justify-centre text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
             </div>
               </div>
               <div className="w-full px-4 text-center mt-5">
