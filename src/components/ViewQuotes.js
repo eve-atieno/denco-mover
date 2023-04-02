@@ -23,9 +23,9 @@ const ViewQuotes = ({service}) => {
               <img class="object-cover object-top w-full" src={quote.image} alt='Mountain'/>
           </div>
               <div className="w-full px-4 flex justify-center">
-                  <div className="relative  w-32  w-32 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
-                      <svg className="absolute w-20 h-20 centre text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
-                  </div>
+              <div className="relative  w-24 h-24 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                <svg className="absolute w-20 h-20 centre text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+            </div>
               </div>
               <div className="w-full px-4 text-center mt-5">
                 <div className="text-blueGray-700 dark:text-blueGray-200 mt-2 font-bold text-xl uppercase">
@@ -38,16 +38,16 @@ const ViewQuotes = ({service}) => {
                 <div className="w-full lg:w-9/12 ">
                  {/*  create for me a code that can show bookings */}
       
-                  <h3 className="text-3xl text-center font-semibold leading-normal mb-2 text-blueGray-700 dark:text-blueGray-200">
+                  <h3 className="text-3xl text-center font-serif leading-normal mb-2 text-blueGray-700 dark:text-blueGray-200">
                     My Bookings
                   </h3>
-                  <p className="text-lg text-center font-light leading-relaxed mt-4 mb-4 text-blueGray-600 dark:text-blueGray-400">
+                  <p className="text-lg text-center font-serif leading-relaxed mt-4 mb-4 text-blueGray-600 dark:text-blueGray-400">
                     Here is a list of all your bookings
                   </p>
                  {/* create for me a list with row headings, service name, moving from. moving to and date*/}
                   <div className=" ">
                     <div className=" ">
-                      <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600 dark:text-blueGray-400">
+                      <p className="text-lg font-serif leading-relaxed mt-4 mb-4 text-blueGray-600 dark:text-blueGray-400">
                         <table className="table-auto">
                           <thead>
                             <tr>
