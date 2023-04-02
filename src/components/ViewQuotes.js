@@ -23,7 +23,7 @@ const ViewQuotes = ({service}) => {
               <img class="object-cover w-20 object-top w-full" src="https://le-cdn.hibuwebsites.com/aeb1d9b09e1b4b938adfa73d1d08351c/dms3rep/multi/opt/Office-86fb027e-396w.jpg" alt='Mountain'/>
           </div>
               <div className="w-full px-4 flex justify-center">
-              <div className="relative mb-5 mt-5 w-24 h-24 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+              <div className="relative  w-24 h-24 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
                 <svg className="absolute w-20 h-20 centre text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
             </div>
               </div>
@@ -36,6 +36,7 @@ const ViewQuotes = ({service}) => {
             <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
               <div className="flex flex-wrap ">
                 <div className="w-full lg:w-9/12 ">
+
 
                   <h3 className="text-3xl text-justify font-serif leading-normal mb-2 text-blueGray-700 dark:text-blueGray-200">
                     My Bookings
