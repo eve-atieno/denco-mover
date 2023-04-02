@@ -1,0 +1,83 @@
+import React from 'react'
+import Footer from './Footer'
+
+const ViewQuotes = () => {
+  return (
+    <div>
+
+<section className="pt-16 bg-blueGray-50">
+<div className="w-full lg:w-4/12 px-4 mx-auto">
+  <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16">
+    <div className="px-6">
+      <div className="flex flex-wrap justify-center">
+      <div class="rounded-t-lg h-32 overflow-hidden">
+        <img class="object-cover object-top w-full" src='https://images.unsplash.com/photo-1549880338-65ddcdfd017b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ' alt='Mountain'/>
+    </div>
+        <div className="w-full px-4 flex justify-center">
+            <div className="relative  w-24 h-24 overflow-hidden bg-gray-100 rounded-full dark:bg-gray-600">
+                <svg className="absolute w-20 h-20 centre text-gray-400 -left-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path></svg>
+            </div>
+        </div>
+        <div className="w-full px-4 text-center mt-5">
+          <div className="text-blueGray-700 dark:text-blueGray-200 mt-2 font-bold text-xl uppercase">
+            Jenna Stones
+            </div>
+          </div>
+      </div>
+      <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
+        <div className="flex flex-wrap ">
+          <div className="w-full lg:w-9/12 ">
+           {/*  create for me a code that can show bookings */}
+
+            <h3 className="text-3xl text-center font-semibold leading-normal mb-2 text-blueGray-700 dark:text-blueGray-200">
+              My Bookings
+            </h3>
+            <p className="text-lg text-center font-light leading-relaxed mt-4 mb-4 text-blueGray-600 dark:text-blueGray-400">
+              Here is a list of all your bookings
+            </p>
+           {/* create for me a list with row headings, service name, moving from. moving to and date*/}
+            <div className=" ">
+              <div className=" ">
+                <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600 dark:text-blueGray-400">
+                  <table className="table-auto">
+                    <thead>
+                      <tr>
+                        <th className="px-4 py-2">Service</th>
+                        <th className="px-4 py-2">Moving From</th>
+                        <th className="px-4 py-2">Moving To</th>
+                        <th className="px-4 py-2">Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td className="border px-4 py-2">Full House Move</td>
+                        <td className="border px-4 py-2">London</td>
+                        <td className="border px-4 py-2">Birmingham</td>
+                        <td className="border px-4 py-2">12/12/2021</td>
+                      </tr>
+                      <tr className="bg-gray-100">
+                        <td className="border px-4 py-2">Full House Move</td>
+                        <td className="border px-4 py-2">London</td>
+                        <td className="border px-4 py-2">Birmingham</td>
+                        <td className="border px-4 py-2">12/12/2021</td>
+                      </tr>
+                      </tbody>
+                  </table>
+                </p>
+                </div>
+                </div>
+
+        
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+    </div>
+  )
+}
+
+export default ViewQuotes
