@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import Footer from './Footer';
 import GettingStarted from './GettingStarted';
 import About from './About';
 
@@ -52,7 +51,6 @@ const Home = () => {
       </div>
       <GettingStarted id="services" />
       <About />
-      <Footer />
       {showScrollButton && (
         <button
           className="fixed bottom-4 right-4 bg-yellow-400 text-white font-medium rounded-full py-3 px-8 hover:bg-gray-300 hover:text-black transition-colors duration-300"
