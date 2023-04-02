@@ -75,7 +75,6 @@ const ViewQuotes = () => {
   </div>
 </div>
 </section>
-
     </div>
   )
 }
