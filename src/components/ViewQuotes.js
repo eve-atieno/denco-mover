@@ -13,7 +13,7 @@ const ViewQuotes = ({service}) => {
  
   let quotesCards = quotes.map((quote) => {
     return (
-      <div >
+      <div className='min-h-screen bg-gray-100' >
       <section className="pt-16 bg-blueGray-50">
       <div className="w-full lg:w-4/12 px-4 mx-auto">
         <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg mt-16">
