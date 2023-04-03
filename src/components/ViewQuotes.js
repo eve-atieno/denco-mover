@@ -11,6 +11,15 @@ const ViewQuotes = ({service}) => {
       });
   }, []);
  
+  // delete quote
+  const deleteQuote = (id) => {
+    fetch(`https://denco.onrender.com/books/${id}`, {
+      method: 'DELETE',
+    }).then(() => {
+      setQuotes(quotes.filter((quote) => quote.id !== id));
+    });
+  };
+
   let quotesCards = quotes.map((quote) => {
     return (
       <div className="min-h-screen bg-gray-100">
@@ -59,7 +68,8 @@ const ViewQuotes = ({service}) => {
                           </table>
                         </p>
                       </div>
-                      <button className="bg-yellow-400 font-serif text-white text-center font-bold rounded-full border-b-2 border-gray-300 hover:border-gray-400 hover:bg-gray-300 shadow-md py-2 px-6 inline-flex items-center" onClick={() => service.deleteQuote(quote.id)}>Delete</button>
+                      {/* create for me a handle delete for this button */}
+                      <button className="bg-yellow-400 font-serif text-white text-center font-bold rounded-full border-b-2 border-gray-300 hover:border-gray-400 hover:bg-gray-300 shadow-md py-2 px-6 inline-flex items-center" onClick={ deleteQuote}>Delete</button>
                     </div>
                   </div>
                 </div>
