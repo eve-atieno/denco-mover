@@ -37,7 +37,7 @@ const ViewQuotes = ({service}) => {
                 <div className="flex flex-wrap ">
                   <div className="w-full lg:w-9/12">
                     <h3 className="font-bold text-5xl mb-2 text-center pt-1 mt-2 font-serif text-yellow-400">My Bookings</h3>
-                    <p className="text-3xl font-serif leading-relaxed mt-4 mb-4 text-blueGray-600 text-black">Your booking details are below</p>
+                    <p className="text-2xl font-serif leading-relaxed mt-4 mb-4 text-blueGray-600 text-black">Your booking details are below</p>
                     <div className="">
                       <div className="">
                         <p className="text-lg font-serif leading-relaxed mt-4 mb-4 text-blueGray-600 dark:text-blueGray-400">
