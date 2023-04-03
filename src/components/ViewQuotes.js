@@ -59,7 +59,7 @@ const ViewQuotes = ({service}) => {
                           </table>
                         </p>
                       </div>
-                      <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={() => service.deleteQuote(quote.id)}>Delete</button>
+                      <button className="bg-yellow-400 font-serif text-white text-center font-bold rounded-full border-b-2 border-gray-300 hover:border-gray-400 hover:bg-gray-300 shadow-md py-2 px-6 inline-flex items-center" onClick={() => service.deleteQuote(quote.id)}>Delete</button>
                     </div>
                   </div>
                 </div>
