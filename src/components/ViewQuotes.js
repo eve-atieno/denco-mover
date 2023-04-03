@@ -20,7 +20,7 @@ const ViewQuotes = ({service}) => {
     });
   };
 
-  let quotesCards = quotes.map((quote) => {
+ 
     return (
       <div className="min-h-screen bg-gray-100">
       <section className="pt-16 bg-blueGray-50">
@@ -39,7 +39,7 @@ const ViewQuotes = ({service}) => {
                   </div>
                 </div>
                 <div className="w-full px-4 text-center mt-5">
-                  <div className="text-blueGray-700 dark:text-blueGray-200 mt-2 font-bold text-xl uppercase">{quote.name}</div>
+                  <div className="text-blueGray-700 dark:text-blueGray-200 mt-2 font-bold text-xl uppercase">{}</div>
                 </div>
               </div>
               <div className="mt-10 py-10 border-t border-blueGray-200 text-center">
@@ -57,19 +57,25 @@ const ViewQuotes = ({service}) => {
                                 <th className="px-4 text-2xl text-yellow-400 py-2">Moving To</th>
                                 <th className="px-4 text-2xl text-yellow-400 py-2">Date</th>
                               </tr>
+
                             </thead>
                             <tbody>
-                              <tr>
+                            {quotes.map((quote) => (
+                           
+                              <tr key={quote.id}>
                                 <td className="border px-4 py-2">{quote.moving_from}</td>
                                 <td className="border px-4 py-2">{quote.moving_to}</td>
                                 <td className="border px-4 py-2">{quote.moving_date}</td>
+                                <button className="bg-yellow-400 font-serif text-white text-center font-bold rounded-full border-b-2 border-gray-300 hover:border-gray-400 hover:bg-gray-300 shadow-md py-2 px-6 inline-flex items-center" onClick={ ()=>deleteQuote(quote.id)}>Delete</button>
                               </tr>
+                              ))}
                             </tbody>
                           </table>
                         </p>
                       </div>
-                      {/* create for me a handle delete for this button */}
-                      <button className="bg-yellow-400 font-serif text-white text-center font-bold rounded-full border-b-2 border-gray-300 hover:border-gray-400 hover:bg-gray-300 shadow-md py-2 px-6 inline-flex items-center" onClick={ deleteQuote(quote.id)}>Delete</button>
+                      {/* create for me a handle delete for this card */}
+
+                     
                     </div>
                   </div>
                 </div>
@@ -79,20 +85,12 @@ const ViewQuotes = ({service}) => {
         </div>
       </section>
     {/* create a delete button for this card */}
-   
-
-
-
           </div>
     )
-  })
+ 
 
-  return (
-    <>
-{quotesCards}
-
-    </> 
-  )
 }
+  
+
 
 export default ViewQuotes
