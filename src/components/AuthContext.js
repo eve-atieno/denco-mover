@@ -13,7 +13,7 @@ export default function AuthProvider({ children }) {
 
   // login
   const login = (email, password) => {
-    fetch("https://denco.onrender.com/login", {
+    fetch("https://sleepy-brook-91883.herokuapp.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -58,7 +58,7 @@ export default function AuthProvider({ children }) {
 
   // Register
   const register = (name, email, password) => {
-    fetch("https://denco.onrender.com/usrs", {
+    fetch("https://sleepy-brook-91883.herokuapp.com/users", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -117,7 +117,7 @@ export default function AuthProvider({ children }) {
 
   // check if user is logged in
   useEffect(() => {
-    fetch("https://denco.onrender.com/loggedin", {
+    fetch("https://sleepy-brook-91883.herokuapp.com/loggedin", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

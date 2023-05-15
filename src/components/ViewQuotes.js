@@ -4,7 +4,7 @@ import React,{useEffect} from 'react'
 const ViewQuotes = ({service}) => {
   const [quotes, setQuotes] = React.useState([]);
   useEffect(() => {
-    fetch('https://denco.onrender.com/books')
+    fetch('https://sleepy-brook-91883.herokuapp.com/books')
       .then((res) => res.json())
       .then((data) => {
         setQuotes(data);
@@ -13,7 +13,7 @@ const ViewQuotes = ({service}) => {
  
   // delete quote
   const deleteQuote = (id) => {
-    fetch(`https://denco.onrender.com/books/${id}`, {
+    fetch(`https://sleepy-brook-91883.herokuapp.com/books/${id}`, {
       method: 'DELETE',
     }).then(() => {
       setQuotes(quotes.filter((quote) => quote.id !== id));

@@ -23,7 +23,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetch('https://denco.onrender.com/services')
+    fetch('https://sleepy-brook-91883.herokuapp.com/services')
       .then((res) => res.json())
       .then((data) => {
         setContService(data);
@@ -32,7 +32,7 @@ function App() {
   }, []);
   console.log(contService)
   useEffect(() => {
-    fetch('https://denco.onrender.com/books')
+    fetch('https://sleepy-brook-91883.herokuapp.com/books')
       .then((res) => res.json())
       .then((data) => {
         setQuote(data);
